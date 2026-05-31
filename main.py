@@ -8,3 +8,4 @@ class Student:
 s1=Student(1,'ravi',10)
 s2=Student(2,'ram',9)
 s1.print_details()
+print('dev')
