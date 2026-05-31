@@ -17,11 +17,7 @@ class Student_manager:
         self.next_id+=1
         self.student_list.append(s)
         
-    def show_student(self,student_id):
-        name=self.student_dict[student_id]['name']
-        grade=self.student_dict[student_id]['grade']
-        return f'id: {student_id} , name: {name} , grade :{grade} '
-    
+   
            
 sm=Student_manager()
 def menu():
@@ -33,7 +29,7 @@ def menu():
             grade=input('Enter grade : ')
             sm.add_student(name,grade)
 
-            print(f'the follwing details added to database \n {sm.show_student(sm.next_id -1)}')
+
         else:
             break
 menu()
